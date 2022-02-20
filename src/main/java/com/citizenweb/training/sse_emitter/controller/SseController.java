@@ -169,7 +169,7 @@ public class SseController {
             } catch (TaskExecutionException e) {
                 e.printStackTrace();
             }
-        },1,10, TimeUnit.SECONDS);
+        },1,30, TimeUnit.SECONDS);
     }
 
     @GetMapping(value = "lifecycle", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
